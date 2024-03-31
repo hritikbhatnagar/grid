@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            gap: 12px;
+            box-sizing: border-box;
+
+
+        }
+
+        .main {
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .box1 {
+            background-color: rgb(35, 168, 35);
+            grid-row: 1/4;
+
+        }
+
+        .box2 {
+            background-color: rgb(35, 168, 35);
+            grid-row: 1/2;
+            grid-column: 2/4;
+
+        }
+
+        .box3 {
+            background-color: rgb(252, 59, 59);
+            grid-row: 1/2;
+            grid-column: 4/5;
+
+        }
+
+        .box4 {
+            background-color: yellow;
+
+        }
+
+        .box5 {
+            background-color: rgb(252, 59, 59);
+
+        }
+
+        .box6 {
+            background-color: rgb(35, 168, 35);
+            grid-row: 2/4;
+            grid-column: 4/5;
+
+        }
+
+        .box7 {
+            background-color: rgb(252, 59, 59);
+        }
+
+        .box8 {
+            background-color: yellow;
+        }
+
+        @media screen and (max-width:300px) {
+            .main {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(8, 1fr);
+                height: 100vh;
+            }
+
+            .box {
+                width: 100vw;
+                grid-column: 1/2;
+            }
+
+            .box1 {
+                grid-row: 1/2;
+
+
+            }
+
+            .box2 {
+                grid-row: 2/3;
+
+            }
+
+            .box3 {
+                grid-row: 3/4;
+
+            }
+
+            .box4 {
+                grid-row: 4/5;
+
+            }
+
+            .box5 {
+                grid-row: 5/6;
+
+            }
+
+            .box6 {
+                grid-row: 6/7;
+
+            }
+
+            .box7 {
+                grid-row: 7/8;
+
+            }
+
+            .box8 {
+                grid-row: 8/9;
+
+            }
+        }
+        @media screen and (max-width:199px) {
+            .box{
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box1 box">Lorem.</div>
+        <div class="box2 box">Lorem, ipsum.</div>
+        <div class="box3 box">Lorem, ipsum dolor.</div>
+        <div class="box4 box">Lorem ipsum dolor sit.</div>
+        <div class="box5 box">Lorem ipsum dolor sit amet.</div>
+        <div class="box6 box">Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="box7 box">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+        <div class="box8 box">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+
+    </div>
+</body>
+
+</html>
